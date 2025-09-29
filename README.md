@@ -106,7 +106,7 @@ python manage_cache.py test
 - **Max Iterations**: 15
 - **Auto-saves**: Best models and progress
 
-## 🔧 Setup Kaggle API
+## Setup Kaggle API
 
 ### **1. Get Credentials:**
 - Go to https://www.kaggle.com/account
@@ -187,5 +187,6 @@ python manage_cache.py clear    # Reset cache if needed
 - Complete Kaggle integration
 
 - Windows-optimized for reliability
+
 
 
