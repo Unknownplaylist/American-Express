@@ -59,7 +59,7 @@ python run_auto_pipeline.py
 - `quick_submit.py` - Manual Kaggle submission
 - `requirements.txt` - Windows-only dependencies
 
-## 🚀 Intelligent Caching System
+## Intelligent Caching System
 
 ### **Speed Improvements:**
 - **First Run**: ~20 minutes (feature engineering + training)
@@ -187,6 +187,7 @@ python manage_cache.py clear    # Reset cache if needed
 - Complete Kaggle integration
 
 - Windows-optimized for reliability
+
 
 
 
