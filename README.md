@@ -22,22 +22,22 @@ Place CSV files in `data/` directory:
 
 ### 3. Choose Your Workflow
 
-#### **🧪 Test Pipeline (2 minutes)**
+#### **Test Pipeline (2 minutes)**
 ```bash
 python run_test.py
 ```
 
-#### **🎯 Full Training (1-2 hours)**
+#### **Full Training (1-2 hours)**
 ```bash
 python train_full.py
 ```
 
-#### **🤖 Automated Kaggle Pipeline (Continuous)**
+#### **Automated Kaggle Pipeline (Continuous)**
 ```bash
 python run_auto_pipeline.py
 ```
 
-## 📁 Core Files
+## Core Files
 
 ### **Training & Pipeline**
 - `train_full.py` - Complete training with cross-validation
@@ -87,7 +87,7 @@ python manage_cache.py test
 - Smart hash validation prevents stale cache
 - Resume-friendly for interrupted runs
 
-## 🤖 Automated Kaggle Pipeline
+## Automated Kaggle Pipeline
 
 ### **What It Does:**
 1. **Trains** XGBoost with different parameters
@@ -126,7 +126,7 @@ python manage_cache.py test
 python check_kaggle_setup.py
 ```
 
-## 📊 Expected Performance
+## Expected Performance
 
 ### **Test Results:**
 - **Features**: 1,107 engineered features
@@ -167,16 +167,16 @@ python manage_cache.py list     # Check cached features
 python manage_cache.py clear    # Reset cache if needed
 ```
 
-## 🎯 Key Features
+## Key Features
 
-- **✅ Windows Compatible**: Pure pandas, no GPU dependencies
-- **🚀 Intelligent Caching**: 4x faster subsequent runs
-- **🤖 Auto-Tuning**: Hands-off parameter optimization
-- **📊 Kaggle Integration**: Automated submission and scoring
-- **💾 Resume-Friendly**: Save/restore progress automatically
-- **🔧 Easy Setup**: Minimal configuration required
+- **Windows Compatible**: Pure pandas, no GPU dependencies
+- **Intelligent Caching**: 4x faster subsequent runs
+- **Auto-Tuning**: Hands-off parameter optimization
+- **Kaggle Integration**: Automated submission and scoring
+- **Resume-Friendly**: Save/restore progress automatically
+- **Easy Setup**: Minimal configuration required
 
-## 🏆 Production Ready
+## Production Ready
 
 **Status: Fully operational automated ML pipeline**
 
@@ -187,3 +187,4 @@ python manage_cache.py clear    # Reset cache if needed
 - Complete Kaggle integration
 
 - Windows-optimized for reliability
+
