@@ -16,6 +16,10 @@ TEST_PATH = 'data/test_data.csv'
 LABELS_PATH = 'data/train_labels.csv'
 SAMPLE_SUB_PATH = 'data/sample_submission.csv'
 
+# MODEL SELECTION
+AVAILABLE_MODELS = ['xgboost', 'lightgbm']
+DEFAULT_MODEL = 'xgboost'
+
 # WINDOWS-OPTIMIZED XGB PARAMETERS
 XGB_PARAMS = {
     'max_depth': 6,
@@ -32,6 +36,24 @@ XGB_PARAMS = {
     'random_state': SEED,
     'verbosity': 1,
     'n_jobs': -1                    # Use all CPU cores
+}
+
+# LIGHTGBM PARAMETERS - Custom Configuration
+LGBM_PARAMS = {
+    'objective': 'binary',
+    'metric': 'binary_logloss',
+    'boosting_type': 'gbdt',
+    'seed': SEED,
+    'num_leaves': 100,
+    'learning_rate': 0.01,
+    'feature_fraction': 0.20,
+    'bagging_freq': 10,
+    'bagging_fraction': 0.50,
+    'n_jobs': -1,
+    'lambda_l2': 2,
+    'min_data_in_leaf': 40,
+    'verbosity': -1,
+    'force_col_wise': True          # Better for Windows
 }
 
 # CATEGORICAL FEATURES
